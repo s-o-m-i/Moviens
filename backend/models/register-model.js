@@ -7,12 +7,14 @@ username:{
     unique:true,
     trim:true,
     minlength:[3,"username must be atleast 3 characters"],
-    maxlength:[50,"username must be less than 50 characters"]
+    maxlength:[50,"username must be less than 50 characters"],
 },
 email:{
     type:String,
-    required:[true,""],
+    required:[true,"email is required"],
     unique:true,
+    trim:true,
+    lowercase:true,
 },
 password:{
     type:String,
